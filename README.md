@@ -12,19 +12,19 @@ The goal of this project is to create a simple image inpainting widget where use
 
 1. Clone the repository:
    
-   git clone [https://github.com/absha07/Image-Impainting-Widget.git](https://github.com/absha07/Image-Impainting-Widget.git)
+      git clone [https://github.com/absha07/Image-Impainting-Widget.git](https://github.com/absha07/Image-Impainting-Widget.git)
 
 3. Navigate to the project directory:
    
-  cd Image-Impainting-Widget
+     cd Image-Impainting-Widget
 
 5. Install the required dependencies:
 
-  npm install
-
+     npm install
+   
 6. Start the development server:
 
-  npm run dev
+     npm run dev
 
 7. Open your browser and visit `http://localhost:3000`.
 
