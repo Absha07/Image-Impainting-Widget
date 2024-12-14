@@ -1,0 +1,147 @@
+.container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 90%; 
+  overflow: hidden; 
+} 
+
+/* Heading Styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Image Upload Section */
+.image-upload input {
+  margin: 20px 0;
+}
+
+/* Brush Controls Section */
+.brush-controls {
+  margin: 20px 0;
+}
+
+.brush-controls label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.brush-controls input {
+  margin-left: 10px;
+}
+
+/* Canvas Container */
+.canvas-container {
+  /* position: relative;
+  display: inline-block;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  background-color: #000; 
+  max-width: 100%; 
+  overflow: hidden; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 90%;   
+  height: auto;
+  text-align: center;
+}
+
+.canvas-container canvas {
+  /* max-width: 100%;
+  height: auto;
+  overflow: hidden; */
+
+  border: 1px solid #ccc;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+/* Buttons Inside Canvas */
+.canvas-container button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.canvas-container button.primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.canvas-container button.primary:hover {
+  background-color: #45a049;
+}
+
+.canvas-container button.secondary {
+  background-color: #f44336;
+  color: white;
+}
+
+.canvas-container button.secondary:hover {
+  background-color: #e53935;
+}
+
+/* Image Display Section */
+.image-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  margin-top: 30px;
+}
+
+/* Individual Image Containers */
+.image-display div {
+  text-align: center;
+  max-width: 45%; /* Ensure each image doesn't take full width */
+  margin: 10px; /* Space between items */
+  box-sizing: border-box;
+}
+
+/* Image Styling */
+.image-display img {
+  display: block;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #ccc;
+  background-color: #000; /* Matches canvas background */
+  margin: 0 auto;
+}
+
+/* Buttons for Image Download */
+.image-display button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.image-display button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-display {
+    flex-direction: column;
+  }
+
+  .image-display div {
+    max-width: 90%; 
+  }
+}
